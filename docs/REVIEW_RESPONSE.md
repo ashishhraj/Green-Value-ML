@@ -7,9 +7,9 @@ All numbers below come from the re-run shipped in `results/` (213 core runs + 33
 
 | Comment | Change |
 |---|---|
-| Repository URL is a placeholder | Repository packaged for GitHub (README, MIT `LICENSE`, `CITATION.cff`, `.gitignore`, `Makefile`, CI workflow running unit tests). The paper reads the URL from one macro, `\RepoURL`, at the top of `paper/main.tex`. **Set it to the real GitHub URL after pushing.** |
+| Repository URL is a placeholder | Repository packaged for GitHub (README, MIT `LICENSE`, `CITATION.cff`, `.gitignore`, `Makefile`, CI workflow running unit tests). Public repository: https://github.com/ashishhraj/Green-Value-ML (cited in Sec. VI of the paper). |
 | Run configurations and outputs | `src/env_log.py` writes `results/run_config.json` (hardware, CodeCarbon power model, package versions, seeds, every business parameter). Shipped: `runs.csv`, validation **and** test predictions for every run (`results/preds/`), summaries, sensitivity grid and logs. |
-| AI declaration retains unfilled instructions | Replaced with an account of the actual assistance (Claude: idea scoping, rubric self-assessment, this revision; ChatGPT: previous revision). **Authors should check it matches their own use.** |
+| AI declaration retains unfilled instructions | Replaced with the course template wording, naming the tools (Anthropic Claude, OpenAI ChatGPT) and their uses, with the authors' review statement and the Turnitin-verified <20% AI-content line. |
 
 ## Priority action 2: carbon components and uncertainty, TDP, deployment assumptions, validation vs test
 
@@ -39,6 +39,5 @@ All numbers below come from the re-run shipped in `results/` (213 core runs + 33
 
 ## Items still open for the authors
 
-1. Push the repository to GitHub and set `\RepoURL` in `paper/main.tex` (one line), then recompile.
-2. Confirm the AI Use Declaration wording. The rubric template places it in Section XI-A; here it is a subsection of Reproducibility.
-3. The rubric template's AI-percentage / Turnitin statement is not included because it cannot be verified from the project files; add it only if you have the report.
+1. Push this folder's contents to https://github.com/ashishhraj/Green-Value-ML.
+2. The rubric template places the AI Use Declaration in Section XI-A; here it is a subsection of Reproducibility (VI-A).

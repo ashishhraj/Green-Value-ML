@@ -4,6 +4,8 @@ Code, data, results and paper for the AMLBT project *"Beyond Accuracy: An Empiri
 Machine-Learning Carbon Emissions versus Business Value Fulfilment"* (Goa Institute of Management,
 project 21B).
 
+Repository: https://github.com/ashishhraj/Green-Value-ML
+
 **Question.** Green-AI work compares carbon against *accuracy*. Businesses do not earn accuracy — they
 earn money from decisions. Does spending more carbon on a model buy more business value?
 
