@@ -1,0 +1,115 @@
+{
+  "created_utc": "2026-11-21T10:10:29+00:00",
+  "python": "3.13.18",
+  "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "logical_cpus": 2,
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "codecarbon": "3.3.1",
+    "openpyxl": "3.1.5",
+    "psutil": "7.2.2"
+  },
+  "config": {
+    "SEEDS_BY_SCENARIO": {
+      "credit": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "churn": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "retail": [
+        0,
+        1,
+        2
+      ],
+      "retail_real": [
+        0,
+        1,
+        2
+      ],
+      "fraud": [
+        0,
+        1,
+        2
+      ]
+    },
+    "SPLIT": [
+      0.6,
+      0.2,
+      0.2
+    ],
+    "COUNTRY_ISO": "IND",
+    "N_JOBS": 2,
+    "FRAUD": {
+      "review_cost": 5.0
+    },
+    "CHURN": {
+      "offer_cost": 25.0,
+      "accept_rate": 0.3,
+      "horizon_months": 12
+    },
+    "CREDIT": {
+      "margin": 0.1,
+      "lgd": 0.6
+    },
+    "RETAIL": {
+      "n_sku": 120,
+      "n_days": 1095,
+      "holding_frac": 0.3,
+      "real_top_skus": 120,
+      "real_cost_ratio": 0.6
+    },
+    "DEPLOYMENT": {
+      "fraud": {
+        "retrains": 52,
+        "annual_predictions": 100000000
+      },
+      "churn": {
+        "retrains": 12,
+        "annual_predictions": 1000000
+      },
+      "credit": {
+        "retrains": 4,
+        "annual_predictions": 100000
+      },
+      "retail": {
+        "retrains": 52,
+        "annual_predictions": 365000
+      }
+    },
+    "GRIDS": {
+      "India": 0.713,
+      "United States": 0.369,
+      "European Union": 0.244,
+      "France": 0.056
+    },
+    "SOCIAL_COST_CARBON": 190.0,
+    "GVP_TOL": 0.05,
+    "EQUIV_MARGIN_PP": 5.0
+  },
+  "codecarbon_power_model": {
+    "cpu_model": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "cpu_tdp_w_used": 8,
+    "ram_power_w": 10.0,
+    "cpu_power_formula": "TDP * (0.1 + 0.9 * load^3)  [CodeCarbon 'cpu_load' mode, machine tracking]",
+    "rapl_available": false
+  }
+}

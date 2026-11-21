@@ -1,0 +1,37 @@
+{
+  "n_settings": 38,
+  "gvp_saves_90_pct": 6,
+  "gvp_is_value_best": 25,
+  "gvp_within_margin": 38,
+  "gvp_saves_90_and_within": 6,
+  "hpo_is_value_best": 3,
+  "hpo_saves_90": 35,
+  "hpo_median_saving": 99.76736325316952,
+  "gvp_within_margin_of_hpo": 36,
+  "gvp_beats_hpo": 21,
+  "median_saving": 0.0,
+  "core_n": 26,
+  "core_saves_90": 5,
+  "core_median_saving": 0.0,
+  "rho_min": -0.6272727272727273,
+  "rho_max": 0.5515151515151515,
+  "rho_median": 0.26666666666666666,
+  "worst_gvp_minus_best_pp": -3.426171199477963,
+  "by_scenario_median_saving": {
+    "churn": 0.0,
+    "credit": 0.0,
+    "fraud": 80.5,
+    "retail": 29.6,
+    "retail_real": 0.0
+  },
+  "distinct_value_best": {
+    "churn": 4,
+    "credit": 1,
+    "fraud": 2,
+    "retail": 2,
+    "retail_real": 2
+  },
+  "retail_real_n_settings": 12,
+  "retail_real_saves_90_pct": 1,
+  "retail_real_median_saving": 0.0
+}

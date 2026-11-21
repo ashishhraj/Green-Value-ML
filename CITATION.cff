@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Beyond Accuracy: An Empirical Study of Machine-Learning Carbon Emissions versus Business Value Fulfilment"
+authors:
+  - family-names: Raj
+    given-names: Ashish
+  - family-names: Karthikeyan
+    given-names: Ashwin
+  - family-names: Chakraborty
+    given-names: Souvik
+affiliation: "Goa Institute of Management"
+version: "2.0"
+date-released: "2026-11-21"
+license: MIT

@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Probability quality, checked on validation before the Bayes rule D2 is used. ECE (ten bins) of raw scores and of Platt-calibrated probabilities (cross-fitted on validation; calibrator then applied unchanged to test). Mean over all runs, worst model mean in brackets. D2 = share of runs in which the calibrated Bayes rule beat the tuned threshold on validation and was therefore used.}
+\label{tab:calibration}
+\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\begin{tabular}{lrrrrr}
+\toprule
+ & \multicolumn{2}{c}{Validation ECE} & \multicolumn{2}{c}{Test ECE} & \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Scenario & raw & calibrated & raw & calibrated & D2 used \\ \midrule
+Fraud & 0.001 [0.002] & 0.000 [0.000] & 0.001 [0.001] & 0.000 [0.000] & 77\% \\
+Churn & 0.044 [0.111] & 0.029 [0.052] & 0.040 [0.111] & 0.029 [0.051] & 86\% \\
+Credit & 0.100 [0.184] & 0.063 [0.087] & 0.095 [0.176] & 0.070 [0.094] & 57\% \\
+\bottomrule
+\end{tabular}
+\end{table}

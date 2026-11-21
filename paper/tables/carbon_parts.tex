@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Projected annual footprint of the value-best (B) and GVP (G) models under the illustrative deployment profile of Sec.~\ref{sec:lifecycle}, in g CO$_2$e on the Indian grid: training and inference shown separately as mean ($\pm$ relative s.d.\ across repeated runs: run-to-run metering spread only; see Sec.~\ref{sec:carbon} for the larger power-model uncertainty). FR = total on the French grid. SCC = social cost of carbon (\$190/t) as a share of the model's annual modeled value.}
+\label{tab:carbonparts}
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{llrrrr}
+\toprule
+Scen. & Model & Training & Inference & FR & SCC/value \\ \midrule
+Fraud & B: RF-500 & 53 ($\pm$4\%) & 5.6 ($\pm$7\%) & 4.6 & $6.7{\times}10^{-8}$\% \\
+ & G: RF-100 & 10 ($\pm$4\%) & 1 ($\pm$7\%) & 0.9 & $1.4{\times}10^{-8}$\% \\
+Churn & B: Linear & $7.4{\times}10^{-6}$ ($\pm$14\%) & $2.2{\times}10^{-3}$ ($\pm$16\%) & $1.7{\times}10^{-4}$ & $7.8{\times}10^{-13}$\% \\
+Credit & B: RF-500 & $7.3{\times}10^{-3}$ ($\pm$7\%) & 0.12 ($\pm$9\%) & $9.8{\times}10^{-3}$ & $1.9{\times}10^{-9}$\% \\
+Retail & B: HGB-100 & 0.07 ($\pm$3\%) & $1.3{\times}10^{-3}$ ($\pm$4\%) & $5.6{\times}10^{-3}$ & $1.1{\times}10^{-9}$\% \\
+\bottomrule
+\end{tabular}}
+\end{table}

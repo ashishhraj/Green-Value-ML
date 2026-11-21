@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Test-set check of the validation-selected Green Value Point (GVP) against the validation-selected value-best model (when different) and against hyper-parameter search (HGB-HPO). $\Delta$V = GVP $-$ comparator in pp of oracle value, mean over splits, paired bootstrap (2,000 resamples). TOST: equivalent if the 90\% CI lies inside $\pm$5 pp. NI = non-inferior (lower 90\% bound $>-$5 pp).}
+\label{tab:tost}
+\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\begin{tabular}{lllrrrcc}
+\toprule
+Scen. & GVP & vs. & C saved & $\Delta$V & 90\% CI & TOST & NI \\ \midrule
+Fraud & RF-100 & RF-500 & 80\% & -3.4 & [-8.7, +0.3] & no & no \\
+ &  & HGB-HPO & 34\% & -6.1 & [-12.4, +0.4] & no & no \\
+Churn & Linear & HGB-HPO & $>$99.9\% & -0.2 & [-0.8, +0.5] & yes & yes \\
+Credit & RF-500 & HGB-HPO & 94\% & +4.0 & [-2.8, +11.7] & no & yes \\
+Retail & HGB-100 & HGB-HPO & 99\% & 0.0 & [-0.2, +0.2] & yes & yes \\
+\bottomrule
+\end{tabular}
+\end{table}

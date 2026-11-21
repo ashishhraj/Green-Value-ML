@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+# large public dataset, fetched by src/download_data.py (~100 MB, above GitHub's 100 MB limit)
+data/creditcard.csv
+# CodeCarbon / LaTeX by-products
+emissions.csv
+.codecarbon.config
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+paper/*.blg
+paper/*.bbl
+# OS
+.DS_Store
+Thumbs.db

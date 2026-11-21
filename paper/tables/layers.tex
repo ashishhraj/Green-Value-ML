@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Where the business value comes from (test, pp of oracle value; C in mg CO$_2$e). Model upgrade = Linear$\rightarrow$the model with the best \emph{validation} value at the 0.5 rule. Decision upgrade = Linear, 0.5 rule$\rightarrow$value-aware rule (C = metered cost of tuning and calibrating the rule).}
+\label{tab:layers}
+\scriptsize
+\setlength{\tabcolsep}{2.6pt}
+\begin{tabular}{llrrrr}
+\toprule
+ & \multicolumn{3}{c}{Model upgrade} & \multicolumn{2}{c}{Decision upgrade} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-6}
+Scenario & to & $\Delta$V & $\Delta$C & $\Delta$V & $\Delta$C \\ \midrule
+Fraud & HGB-HPO & +16.2 & 301 & +27.9 & 0.52 \\
+Churn & Linear & 0.0 & $<$0.01 & +22.6 & $<$0.01 \\
+Credit & HGB-100 & -1.0 & 0.54 & +89.2 & $<$0.01 \\
+Retail & HGB-100 & +3.6 & 1.35 & +0.6 & $<$0.01 \\
+\bottomrule
+\end{tabular}
+\end{table}

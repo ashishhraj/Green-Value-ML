@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\caption{UCI Online Retail (real transactions), three rolling-origin folds. The value-best model (bold) and the GVP ($\dagger$) are selected on each fold's validation window; capture is then reported on the later test window (mean $\pm$ s.d.\ over folds). C = training emissions (mg CO$_2$e). Value uses an assumed cost proxy.}
+\label{tab:retailreal}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+Model & C & $1-$WAPE & Val.\ capture (\%) & Test capture (\%) \\ \midrule
+Naive & 0 & -0.171 & 3.0 $\pm$ 0.4 & 2.4 $\pm$ 0.8 \\
+Linear & 0.15 & -0.148 & 8.3 $\pm$ 3.5 & 6.9 $\pm$ 1.4 \\
+\textbf{Tree-d6}$^\dagger$ & 0.23 & 0.022 & 17.0 $\pm$ 3.0 & 16.6 $\pm$ 2.0 \\
+RF-100 & 52 & -0.921 & -7.1 $\pm$ 37.2 & -7.5 $\pm$ 35.5 \\
+RF-500 & 258 & -0.764 & -1.8 $\pm$ 30.0 & -2.3 $\pm$ 27.8 \\
+HGB-100 & 0.89 & -0.184 & 11.2 $\pm$ 8.0 & 10.3 $\pm$ 6.3 \\
+HGB-500 & 1.3 & -0.138 & 10.6 $\pm$ 5.8 & 9.2 $\pm$ 4.8 \\
+MLP-S & 4.1 & 0.054 & 11.4 $\pm$ 3.1 & 8.2 $\pm$ 1.7 \\
+MLP-L & 19 & 0.027 & 11.8 $\pm$ 2.8 & 8.7 $\pm$ 2.2 \\
+Stack & 151 & -0.658 & 0.9 $\pm$ 24.6 & 0.5 $\pm$ 22.3 \\
+HGB-HPO & 148 & -0.907 & -7.8 $\pm$ 44.0 & -10.2 $\pm$ 40.9 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,28 @@
+\begin{table*}[t]
+\centering
+\caption{Model ladder results (mean over repeated splits). C = training emissions in mg CO$_2$e (CodeCarbon, Indian grid). Acc = test ROC-AUC (retail: 1$-$WAPE). V$_{0.5}$ / V$^{\ast}$ = test business value captured as \% of the perfect-foresight oracle under the default 0.5 rule / the value-aware rule. Bold = value-best, \underline{underline} = accuracy-best and $\dagger$ = Green Value Point, all three \emph{selected on validation data}; the test columns only report their outcome.}
+\label{tab:ladder}
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabular}{lrrrrrrrrrrrrrrrr}
+\toprule
+ & \multicolumn{4}{c}{Fraud detection} & \multicolumn{4}{c}{Churn retention} & \multicolumn{4}{c}{Credit approval} & \multicolumn{4}{c}{Perishable ordering} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}\cmidrule(lr){10-13}\cmidrule(lr){14-17}
+Model & C & Acc & V$_{0.5}$ & V$^{\ast}$ & C & Acc & V$_{0.5}$ & V$^{\ast}$ & C & Acc & V$_{0.5}$ & V$^{\ast}$ & C & Acc & V$_{0.5}$ & V$^{\ast}$ \\ \midrule
+Naive & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & $<$0.01 & 0.506 & 0.0 & -0.2 \\
+Linear & 0.59 & 0.981 & 55.9 & 83.9 & $<$0.01 & 0.844 & 58.8 & \textbf{81.4}$^\dagger$ & $<$0.01 & 0.773 & -85.2 & 4.0 & $<$0.01 & 0.639 & 26.5 & 27.1 \\
+Tree-d6 & 11 & 0.874 & 78.6 & 79.3 & $<$0.01 & 0.807 & 50.9 & 79.6 & $<$0.01 & 0.706 & -89.4 & -1.2 & 0.55 & 0.647 & 27.8 & 28.7 \\
+RF-100 & 200 & 0.956 & 76.4 & 73.1$^\dagger$ & 0.69 & 0.836 & 51.0 & 81.0 & 0.36 & \underline{0.770} & -117.7 & 15.2 & 94 & 0.653 & 29.4 & 30.1 \\
+RF-500 & 1,026 & 0.966 & 76.4 & \textbf{76.6} & 3.34 & 0.838 & 50.7 & 81.0 & 1.82 & 0.773 & -121.2 & \textbf{11.1}$^\dagger$ & 472 & 0.654 & 29.7 & 30.4 \\
+HGB-100 & 1.83 & 0.863 & 67.2 & 69.5 & 0.88 & 0.830 & 52.5 & 80.6 & 0.54 & 0.762 & -86.2 & 13.8 & 1.35 & \underline{0.661} & 30.1 & \textbf{31.3}$^\dagger$ \\
+HGB-500 & 1.93 & 0.822 & 55.7 & 56.8 & 6.36 & 0.812 & 48.9 & 80.6 & 2.61 & 0.758 & -84.3 & 10.5 & 2.70 & 0.660 & 30.1 & 31.2 \\
+MLP-S & 13 & 0.967 & 60.8 & 82.7 & 0.52 & 0.836 & 53.2 & 81.0 & 0.10 & 0.709 & -118.8 & 2.6 & 17 & 0.658 & 29.5 & 30.6 \\
+MLP-L & 129 & 0.964 & 80.8 & 83.4 & 5.47 & 0.829 & 57.3 & 81.2 & 0.61 & 0.772 & -100.8 & 12.3 & 83 & 0.657 & 29.8 & 30.9 \\
+Stack & 575 & 0.978 & 68.8 & 82.6 & 7.29 & 0.843 & 52.5 & 81.0 & 3.57 & 0.775 & -106.3 & 12.4 & 331 & 0.659 & 30.2 & 30.9 \\
+HGB-HPO & 302 & \underline{0.977} & 72.2 & 79.3 & 148 & \underline{0.846} & 53.2 & 81.6 & 30 & 0.753 & -91.3 & 7.1 & 176 & 0.661 & 30.2 & 31.3 \\
+\midrule
+Spearman $\rho$(C,V$^{\ast}$) & \multicolumn{4}{c}{-0.04 (p=0.91)} & \multicolumn{4}{c}{+0.30 (p=0.40)} & \multicolumn{4}{c}{+0.36 (p=0.31)} & \multicolumn{4}{c}{+0.49 (p=0.13)} \\
+Spearman $\rho$(Acc,V$^{\ast}$) & \multicolumn{4}{c}{+0.73 (p=0.02)} & \multicolumn{4}{c}{+0.76 (p=0.01)} & \multicolumn{4}{c}{+0.56 (p=0.09)} & \multicolumn{4}{c}{+0.99 (p=0.00)} \\
+\bottomrule
+\end{tabular}
+\end{table*}
